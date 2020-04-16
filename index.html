@@ -1,47 +1,120 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" type="text/css" href="css/global.css" />
-    <link rel="stylesheet" type="text/css" href="css/typography.css" />
+    <title>Evelyn_01023180016_UAS Studio Produksi</title>
+    <title>Global Warming on Our Globe</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts..googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
-    <nav>
-      <main>
-		   <div class="selalukananatas">
-        <a href="index.html" class="menu">Home</a>
-        <a href="emails.html">Emails</a>
-        <a href="opentype.html">OpenType features</a>
-        <a href="widow.html">Widow and Orphan control</a>
-        <a href="Bates.html">Bates numbering</a>
-       </div>
-      </main>
-    </nav>
-<section class="bg">
-    <section class="full">
-      <main>
-        <div class="left2">
-            <h1>Typography is the visual component of the written word.</h1><br>
+    <div class="container">
+    <header>
+      <div class="dropdown">
+        <nav>
+          <a href="index.html">
+          <img class="logo" src="image/logo.png"></a>
+        </nav>
+      </div>
+      <div>
+       
+        <nav class="menu">
+          <ul>
+            <li><a href="about.html">About Us</a>
+            </li>
+            <li><a href="evidence.html">Facts</a>
+                <ul>
+                  <li><a href="evidence.html">Evidence</a></li>
+                  <li><a href="causes.html">Causes</a></li> 
+                  <li><a href="effects.html">Effects</a></li>
+                </ul>
+            </li>
+            <li><a href="earth.html">Projects</a>
+              <ul>
+                <li><a href="earth.html">Earth Day</a></li>
+                <li><a href="alternatives.html">Alternatives</a></li>
+                <li><a href="greendeal.html">Green Deal</a></li>
+                <li><a href="nuclearfusion.html">Nuclear Fusion</a></li>
+              </ul>
+            </li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+          <div class="icon">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div> 
+        </nav>
+      </div>
+       
+    </header>
+      <section>
+      <div class="opening">
+        <h1>Global Warming</h1>
+        <br>
+        <h2><p>Throughout its long history, Earth has warmed and cooled time and again. Climate has changed when the planet received more or less sunlight due to subtle shifts in its orbit, as the atmosphere or surface changed, or when the Sun’s energy varied. But in the past century, another force has started to influence Earth’s climate: humanity</p>
+        <br>
+        <p>How does this warming compare to previous changes in Earth’s climate? How can we be certain that human-released greenhouse gases are causing the warming? How much more will the Earth warm? How will Earth respond? Answering these questions is perhaps the most significant scientific challenge of our time.</p></h2>
+      </div>
+      </section>
 
-
-        
-          <p>A text is a sequence of words. A text stays the same no matter how it’s rendered.
-          Consider the sentence “I like pizza.” I can print that text on a piece of paper, or
-          read it aloud, or save it in a file on my laptop. It’ll be the same text, just rendered
-          different ways—visually, audibly, digitally.</p><br>
-
-          <p>But when “I like pizza” is printed, typography gets involved. All visually displayed
-          text involves typography—whether it’s on paper, a computer screen, or a billboard.</p><br>
-
-          <p>Is typography an art? That’s like asking if photography is an art. Some
-          photographers and typographers use techniques that raise their work to the level of
-          art. But at their core, both photography and typography have a utilitarian function.
-          The aesthetic component is separate. Being an effective typographer is more about
-          good skills than good taste. And you can learn the skills.</p><br>
-      
-          </div>
+      <section>
+      <div class="content">
+        <h3>What is Global Warming?</h3>
+        <br>
+        <h4><p>Global warming is the unusually rapid increase in Earth’s average surface temperature over the past century primarily due to the greenhouse gases released by people burning fossil fuels.The global average surface temperature rose 0.6 to 0.9 degrees Celsius (1.1 to 1.6° F) between 1906 and 2005, and the rate of temperature increase has nearly doubled in the last 50 years. Temperatures are certain to go up further.</p></h4>
+        <br>
+        <div class="image">
+          <img src="image/homedata.png">Despite ups and downs from year to year, global average surface temperature is rising. By the beginning of the 21st century, Earth’s temperature was roughly 0.5 degrees Celsius above the long-term (1951–1980) average. (NASA figure adapted from Goddard Institute for Space Studies Surface Temperature Analysis.)
         </div>
-      </main>
-    </section>
-  </section>
+
+      </div>
+
+      <div class="content">
+        <h3>How is Today’s Warming Different from the Past?</h3>
+        <br>
+        <h2><p>Earth has experienced climate change in the past without help from humanity. We know about past climates because of evidence left in tree rings, layers of ice in glaciers, ocean sediments, coral reefs, and layers of sedimentary rocks. For example, bubbles of air in glacial ice trap tiny samples of Earth’s atmosphere, giving scientists a history of greenhouse gases that stretches back more than 800,000 years. The chemical make-up of the ice provides clues to the average global temperature.</p>
+        
+        <br>
+        <p>Using this ancient evidence, scientists have built a record of Earth’s past climates, or “paleoclimates.” <span id="dots">...</span><span id="more">The paleoclimate record combined with global models shows past ice ages as well as periods even warmer than today. But the paleoclimate record also reveals that the current climatic warming is occurring much more rapidly than past warming events.</span></p>
+        <button onclick="myFunction()" id="myBtn">Read more</button>
+        <script>
+          function myFunction() {
+          var dots = document.getElementById("dots");
+          var moreText = document.getElementById("more");
+          var btnText = document.getElementById("myBtn");
+
+          if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more"; 
+            moreText.style.display = "none";
+          } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less"; 
+            moreText.style.display = "inline";
+          }
+        }
+        </script>
+      </div>
+
+
+      </div>
+      </section>  
+
+      </div>
+   </div>
+   <div class="footer">
+      <div class="footer_content">
+        <div class="footer_section about"></div>
+        <div class="footer_section links"></div>
+        <div class="footer_section contact-form"></div>
+        
+      </div>
+      <div class="footer_bottom">
+        &copy; againsttheclimate.com | Designed by Evelyn
+      </div>
+   </div>
+
   </body>
 </html>

@@ -1,0 +1,322 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+.icon{ 
+	display: none;
+}
+
+.icon div{
+	width: 25px;
+	height: 3px;
+	background-color: white;
+	margin: 5px;
+}
+
+html, body {
+	height: 100%; 
+	 background:  repeat;
+	 background-size: cover;
+	 font-family: 'Poppins', sans-serif;
+}
+
+.container{
+	height: 100vh;
+	width: 100%;
+	background-image: url('../image/home2.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	overflow-y: auto;
+}
+
+div{
+	display: block;
+}
+
+.clearfix::after{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+header{
+	  position: fixed;
+	  width: 100%;
+	  height: 60px;
+	  padding: 60px;
+	  display: flex;
+	  justify-content: space-between;
+	  align-items: center;
+	  z-index: 1;
+	  font-family: 'Poppins', sans-serif;
+	  font-color: white;
+	  background-color: #1e5878;
+ 	  opacity: 80%;
+
+ }
+
+section {
+  	width: 100%;
+  	height: 100vh;
+  	position: relative;
+}
+
+
+
+ .opening{
+ 	position: absolute;
+ 	top: 40%;
+ 	margin-left: 15%;
+ 	background: #1e5878;
+ 	width: 70%;
+ 	text-align: center;
+ 	border: 40px;
+ 	padding: 20px;
+ 	opacity: 80%;
+ }
+
+
+.content{
+	position: relative;
+  	width: 40%;
+	height: 100%;
+	margin-left: 15%;
+	width: 70%;
+	border: 40px;
+	padding: 20px; 
+	float: left;
+	color: white;
+}
+
+.image{
+	padding: 20px;
+	margin-left: 10%;
+	width: 70%;
+}
+
+.image2{
+	padding: 20px;
+	margin-left: 5%;
+	margin-right:15%;
+	width: 80%;
+
+}
+
+.news{
+	position: relative;
+	width: 70%;
+	height: 100%;
+	border: 1px yellow;
+
+}
+
+.newscontent{
+	width: 90%;
+	margin: 30px auto 30px;
+	border: 1px solid red;
+}
+
+.content .main_content{
+	width: 70%;
+	float: left;
+	border: 1px solid blue;
+}
+
+.content .sidebar{
+	width: 30%;
+	float: left;
+	border: 1px green;
+	height:300px;
+}
+
+
+h1{
+	color: white;
+	font-family: 'gill sans', sans-serif;
+	font-size: 40px;
+
+}
+
+h2{
+	color: white;
+	font-family: 'poppins', sans-serif;
+	font-size: 20px;
+}
+
+
+h3{
+	color: #1e5878;
+	font-family: 'Helvetica', sans-serif;
+	font-size: 20px;
+}
+h4{
+	color: white;
+	font-family: 'Helvetica', sans-serif;
+	font-size: 18px;
+}
+
+h5{
+	color:white;
+	font-family: 'Helvetica', sans-serif;
+	font-size: 18px;
+	text-decoration: 
+}
+section{
+	display: block;
+}
+
+ .dropdown {
+ 	margin: 0 auto;
+ }
+
+	
+.logo{
+	float: left;
+	padding: 20px 40px 0 0;
+	width: 300px;
+	height: auto;
+	z-index: -1;
+}
+
+.submenu{
+	display: none;
+	left: 150px;
+}
+
+.menu ul li:hover .submenu{
+	display: block;
+	background-color: lightblue;
+
+}
+
+.menu ul li:hover .submenu ul{
+	margin-left: 150px;
+	top: 0px;
+	display: block;
+	
+}
+
+
+
+
+
+ul {
+	 margin: 0px;
+	 padding: 0px;
+	 list-style: none;
+}
+
+ul li {
+	 float: left;
+	 width: 200px;
+	 height: 40px;
+	 background-color: #1e5878;
+	 opacity: .8;
+	 line-height: 40px;
+	 text-align: center;
+	 font-size: 20px;
+}
+
+ul li a {
+	 text-decoration: none;
+	 color: white;
+	 display: block;
+}
+
+ul li a:hover {
+ 	background-color: #aec6cf;
+}
+
+ul li ul li{
+ 	display: none;
+}
+
+ul li:hover ul li {
+ 	display: block;
+}
+
+ul ul ul li{
+	width: 150px;
+	float: none;
+	left: 150px;
+	position: relative;
+}
+
+.footer {
+	background: #1e5878;
+	color:#d3d3d3;
+	height: 10px;
+	position: relative;
+}
+
+.footer .footer_content{
+	
+	height: 10px;
+	display: flex;
+}
+
+.footer .footer_content .footer_section{
+	flex: 1;
+
+}
+
+.footer .footer_bottom{
+	background: #1e5878;
+	color: white;
+	height: 50px;
+	width: 100%;
+	text-align: center;
+	position: relative;
+	bottom: 0px;
+	left: 0px;
+	padding-top: 20px;
+}
+
+
+
+
+
+@media screen and (max-width:992px){
+	
+	body{ 
+		overflow-x: hidden;
+	}
+
+	.menu{
+		
+		background-color: #1e5878;
+		height: 100vh;
+		width: 100vw;
+		flex-direction: column;
+		align-items: center;
+		width: 40%;
+		transform: translateX(100%);
+		
+	}
+
+	.menu li{
+		opacity: 0;
+	}
+
+	.line{
+		width: 30px;
+		height: 3px;
+		background-color: : white;
+		margin: 5px;
+	}
+
+	.icon{
+		
+		right: 5%;
+		top: 50%;
+		display: block;
+		cursor: pointer;
+		transform: translate(-5%, -50%);
+	}
+
+	.nav-active{
+		transform:translateX(0%);
+	}
